@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-v2-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-regular.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/inter-v2-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-500.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-v2-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-700.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: 'LCDFont';
+    src: url('../fonts/LCD.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'global-font';
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*:focus {
+    outline-color: red;
+    outline-width: 4px;
+    outline-offset: 2px;
+    outline-style: dashed;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'global-font', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: blue;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-top {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    border-bottom: 3px solid darkblue;
+}
+
+.head-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.logo-link {
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-link:hover {
+    color: darkblue;
+}
+
+.head-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.head-li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.head-li:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+
+.head-li-img {
+    display: block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.head-li-link {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.head-li-link-1:hover {
+    color: #ff7500;
+    font-size: 18px;
+}
+.head-li-link-2:hover {
+    color: #fff200;
+    font-size: 18px;
+}
+
+.head-li-link-3:hover {
+    color: #ff7500;
+    font-size: 18px;
+}
+
+.head-li-link-4:hover {
+    color: #fff200;
+    font-size: 18px;
+}
+
+/* main */
+
+#watch {
+    font-size: 130px;
+    text-align: center;
+    color: #ffffffff;
+    font-family: 'LCDFont';
+    transition: all 0.3s ease-in-out;
+}
+
+#watch::selection {
+    color: #000;
+    background-color: blue;
+}
+
+.made-in {
+    font-family: 'sans-serif';
+    display: flex;
+    color: #fff;
+    align-items: center;
+    flex-direction: column;
+}
+
+.made-in-a {
+    color: #ffffffff;
+}
